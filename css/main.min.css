@@ -338,6 +338,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 -4px;
 }
 .order-menu__logo {
   font-size: 36px;
@@ -348,7 +349,6 @@ select {
   align-items: center;
   width: 100%;
   max-width: 400px;
-  margin: 0 -4px;
 }
 .order-menu__about-item {
   width: 33.333%;
@@ -430,6 +430,9 @@ select {
 @media (max-width: 768px) {
   .order-menu__header {
     flex-direction: column;
+  }
+  .order-menu__order-about {
+    max-width: 100%;
   }
 }
 /* @media (max-width: 520px) */
