@@ -400,15 +400,15 @@ select {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: brown;
+  background-color: grey;
   color: #fff;
   padding: 20px;
-  border: 1px solid brown;
+  border: 1px solid grey;
   cursor: pointer;
   transition: all 0.2s ease 0s;
 }
 .order-menu__btn:hover {
-  color: brown;
+  color: grey;
   background-color: #fff;
 }
 
