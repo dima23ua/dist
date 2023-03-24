@@ -371,15 +371,20 @@ select {
 }
 .order-menu__checkbox {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 25px;
+  flex: 0 0 auto;
 }
 .order-menu__checkbox-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 20%;
+  height: 100%;
+  padding: 0 2px;
 }
 .order-menu__checkbox-img {
   display: flex;
@@ -392,6 +397,9 @@ select {
 .order-menu__checkbox-title {
   color: green;
   font-weight: bold;
+  text-align: center;
+}
+.order-menu__checkbox-text {
   text-align: center;
 }
 .order-menu__btn {
@@ -433,6 +441,9 @@ select {
   }
   .order-menu__order-about {
     max-width: 100%;
+  }
+  .order-menu__checkbox-item {
+    width: 33.333%;
   }
 }
 /* @media (max-width: 520px) */
