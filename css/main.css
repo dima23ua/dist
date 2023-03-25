@@ -196,7 +196,6 @@ select {
   align-items: center;
   border: 1px solid silver;
   margin-bottom: 5px;
-  cursor: pointer;
   transition: all 0.2s ease 0s;
 }
 .grid-body__row:hover {
@@ -236,6 +235,7 @@ select {
 }
 .grid-body__row-checked {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -252,12 +252,65 @@ select {
   font-size: 12px;
 }
 
-.checkbox {
+.rating-text {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.rating-text__item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: green;
+}
+.rating-text__bg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-bottom: 10px;
+  position: relative;
+}
+.rating-text__bg:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/check.svg") no-repeat center top/cover;
+}
+.rating-text__title {
+  font-size: 16px;
+}
+.rating-text__item-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.rating-text.in-progress .rating-text__item:nth-child(1) .rating-text__bg, .rating-text.in-progress .rating-text__item:nth-child(2) .rating-text__bg, .rating-text.in-progress .rating-text__item:nth-child(3) .rating-text__bg {
+  background-color: green;
+}
+.rating-text.in-progress .rating-text__item:nth-child(4) .rating-text__bg {
+  background-color: orange;
+}
+
+.rating-text.done .rating-text__item .rating-text__bg {
+  background-color: green;
+}
+
+.rating-text.delayed .rating-text__item:nth-child(1) .rating-text__bg {
+  background-color: green;
+}
+.rating-text.delayed .rating-text__item:nth-child(2) .rating-text__bg {
+  background-color: red;
 }
 
 .popup-wrapper {
@@ -273,6 +326,7 @@ select {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease 0s;
+  z-index: 10;
 }
 .popup-wrapper:before {
   content: "";
@@ -462,6 +516,60 @@ select {
 .order-menu__btn:hover {
   color: grey;
   background-color: #fff;
+}
+
+.rating-text-hero {
+  width: 100%;
+  display: flex;
+}
+.rating-text-hero__item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rating-text-hero__bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.rating-text-hero__bg:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/check.svg") no-repeat center top/cover;
+}
+.rating-text-hero__title {
+  color: green;
+}
+
+.rating-text-hero.in-progress .rating-text-hero__item:nth-child(1) .rating-text-hero__bg, .rating-text-hero.in-progress .rating-text-hero__item:nth-child(2) .rating-text-hero__bg, .rating-text-hero.in-progress .rating-text-hero__item:nth-child(3) .rating-text-hero__bg {
+  background-color: green;
+}
+.rating-text-hero.in-progress .rating-text-hero__item:nth-child(4) .rating-text-hero__bg {
+  background-color: orange;
+}
+
+.rating-text-hero.done .rating-text-hero__bg {
+  background-color: green;
+}
+
+.rating-text-hero.delayed .rating-text-hero__item:nth-child(1) .rating-text-hero__bg {
+  background-color: green;
+}
+.rating-text-hero.delayed .rating-text-hero__item:nth-child(2) .rating-text-hero__bg {
+  background-color: red;
 }
 
 /* @media (max-width: 1440px) */
