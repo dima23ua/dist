@@ -32,656 +32,692 @@
 
       <div class="grid-body">
 
-         <a href="#order1" class="grid-body__row popup-link">
+         <div class="grid-body__content">
+            <a href="#order1" class="grid-body__row popup-link">
 
-            <div class="grid-body__row-items">
+               <div class="grid-body__row-items">
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">OrderNo:</div>
-                     <div class="grid-body__numm">0000001</div>
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">OrderNo:</div>
+                        <div class="grid-body__numm order-outer">0000001</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Service:</div>
+                        <div class="grid-body__numm service-outer">Maintenance</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Provider:</div>
+                        <div class="grid-body__numm provider-outer">Foo</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block block-color">
+                        <div class="grid-body__title">Status:</div>
+                        <div class="grid-body__numm status-outer">Done</div>
+                     </div>
                   </div>
                </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Service:</div>
-                     <div class="grid-body__numm">Maintenance</div>
+               <div class="grid-body__row-checked">
+                  
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Customer</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Provider</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Arrived</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Job</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Payment</div>
                   </div>
                </div>
+            </a>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Provider:</div>
-                     <div class="grid-body__numm">Foo</div>
+            <div class="popup-wrapper" id="order1">
+               <div class="popup popup-container">
+
+                  <!-- close popup -->
+                  <div class="popup__close">
+                     <a href="#header" class="popup__close-link close-popup"></a>
                   </div>
-               </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Status:</div>
-                     <div class="grid-body__numm">Done</div>
-                  </div>
-               </div>
-            </div>
+                  <!-- popup content -->
+                  <div class="popup__body order-menu">
+                     <div class="order-menu__header">
+                        <div class="order-menu__logo">Workflow</div>
 
-            <div class="grid-body__row-checked">
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Customer</div>
-               </div>
+                        <div class="order-menu__order-about">
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">OrderNo:</div>
+                                 <input type="text" class="order-menu__about-item-text order" value="000000X">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Service:</div>
+                                 <input type="text" class="order-menu__about-item-text service" value="Maintanence">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Provider:</div>
+                                 <input type="text" class="order-menu__about-item-text provider" value="Foo">
+                              </div>
+                           </div>
+                        </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Provider</div>
-               </div>
+                     </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Arrived</div>
-               </div>
+                     <div class="order-menu__status status-dropdown">
+                        <div class="order-menu__status-header">
+                           <div class="order-menu__status-item">Status:</div>
+                           <div class="order-menu__status-position status-btn">In progress</div>
+                        </div>
+                        <ul class="order-menu__list status-list">
+                           <li class="order-menu__item status-list-item">In progress</li>
+                           <li class="order-menu__item status-list-item">Done</li>
+                           <li class="order-menu__item status-list-item">Delayed</li>
+                        </ul>
+                     </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Job</div>
-               </div>
+                     <div class="order-menu__checkbox">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Payment</div>
-               </div>
-            </div>
-         </a>
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Receiving</div>
+                           <div class="order-menu__checkbox-text">Service provider</div>
+                        </div>
 
-         <a href="#order2" class="grid-body__row popup-link">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Arrive</div>
+                           <div class="order-menu__checkbox-text">To customer</div>
+                        </div>
 
-            <div class="grid-body__row-items">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">OrderNo:</div>
-                     <div class="grid-body__numm">0000002</div>
-                  </div>
-               </div>
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Service:</div>
-                     <div class="grid-body__numm">Domestic Workers</div>
-                  </div>
-               </div>
+                     </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Provider:</div>
-                     <div class="grid-body__numm">Bar</div>
-                  </div>
-               </div>
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Status:</div>
-                     <div class="grid-body__numm">In Progress</div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="grid-body__row-checked">
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Customer</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Provider</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Arrived</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Job</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Payment</div>
-               </div>
-            </div>
-         </a>
-
-         <a href="#order3" class="grid-body__row popup-link">
-
-            <div class="grid-body__row-items">
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">OrderNo:</div>
-                     <div class="grid-body__numm">0000003</div>
-                  </div>
-               </div>
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Service:</div>
-                     <div class="grid-body__numm">Maintanence</div>
-                  </div>
-               </div>
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Provider:</div>
-                     <div class="grid-body__numm">Bar</div>
-                  </div>
-               </div>
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Status:</div>
-                     <div class="grid-body__numm">Delayed</div>
+                     <div class="order-menu__btn">Edit</div>
                   </div>
                </div>
             </div>
+         </div>
 
-            <div class="grid-body__row-checked">
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
+         <div class="grid-body__content">
+            <a href="#order2" class="grid-body__row popup-link">
+
+               <div class="grid-body__row-items">
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">OrderNo:</div>
+                        <div class="grid-body__numm order-outer">0000001</div>
+                     </div>
                   </div>
-                  <div class="grid-body__check-title">Customer</div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Service:</div>
+                        <div class="grid-body__numm service-outer">Maintenance</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Provider:</div>
+                        <div class="grid-body__numm provider-outer">Foo</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Status:</div>
+                        <div class="grid-body__numm status-outer">Done</div>
+                     </div>
+                  </div>
                </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
+               <div class="grid-body__row-checked">
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Customer</div>
                   </div>
-                  <div class="grid-body__check-title">Provider</div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Provider</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Arrived</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Job</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Payment</div>
+                  </div>
+               </div>
+            </a>
+
+            <div class="popup-wrapper" id="order2">
+               <div class="popup popup-container">
+
+                  <!-- close popup -->
+                  <div class="popup__close">
+                     <a href="#header" class="popup__close-link close-popup"></a>
+                  </div>
+
+                  <!-- popup content -->
+
+                  <div class="popup__body order-menu">
+                     <div class="order-menu__header">
+                        <div class="order-menu__logo">Workflow</div>
+
+                        <div class="order-menu__order-about">
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">OrderNo:</div>
+                                 <input type="text" class="order-menu__about-item-text order" value="000000X">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Service:</div>
+                                 <input type="text" class="order-menu__about-item-text service" value="Maintanence">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Provider:</div>
+                                 <input type="text" class="order-menu__about-item-text provider" value="Foo">
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__status status-dropdown">
+                        <div class="order-menu__status-header">
+                           <div class="order-menu__status-item">Status:</div>
+                           <div class="order-menu__status-position status-btn">In progress</div>
+                        </div>
+                        <ul class="order-menu__list status-list">
+                           <li class="order-menu__item status-list-item">In progress</li>
+                           <li class="order-menu__item status-list-item">Done</li>
+                           <li class="order-menu__item status-list-item">Delayed</li>
+                        </ul>
+                     </div>
+
+                     <div class="order-menu__checkbox">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__btn">Edit</div>
+                  </div>
                </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Arrived</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Job</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Payment</div>
-               </div>
             </div>
-         </a>
+         </div>
 
-         <a href="#order4" class="grid-body__row popup-link">
+         <div class="grid-body__content">
+            <a href="#order3" class="grid-body__row popup-link">
 
-            <div class="grid-body__row-items">
+               <div class="grid-body__row-items">
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">OrderNo:</div>
-                     <div class="grid-body__numm">0000004</div>
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">OrderNo:</div>
+                        <div class="grid-body__numm order-outer">0000001</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Service:</div>
+                        <div class="grid-body__numm service-outer">Maintenance</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Provider:</div>
+                        <div class="grid-body__numm provider-outer">Foo</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Status:</div>
+                        <div class="grid-body__numm status-outer">Done</div>
+                     </div>
                   </div>
                </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Service:</div>
-                     <div class="grid-body__numm">Domestic worker</div>
+               <div class="grid-body__row-checked">
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Customer</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Provider</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Arrived</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Job</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Payment</div>
+                  </div>
+               </div>
+            </a>
+
+            <div class="popup-wrapper" id="order3">
+               <div class="popup popup-container">
+                  <!-- close popup -->
+                  <div class="popup__close">
+                     <a href="#header" class="popup__close-link close-popup"></a>
+                  </div>
+
+                  <!-- popup content -->
+
+                  <div class="popup__body order-menu">
+                     <div class="order-menu__header">
+                        <div class="order-menu__logo">Workflow</div>
+
+                        <div class="order-menu__order-about">
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">OrderNo:</div>
+                                 <input type="text" class="order-menu__about-item-text order" value="000000X">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Service:</div>
+                                 <input type="text" class="order-menu__about-item-text service" value="Maintanence">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Provider:</div>
+                                 <input type="text" class="order-menu__about-item-text provider" value="Foo">
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__status status-dropdown">
+                        <div class="order-menu__status-header">
+                           <div class="order-menu__status-item">Status:</div>
+                           <div class="order-menu__status-position status-btn">In progress</div>
+                        </div>
+                        <ul class="order-menu__list status-list">
+                           <li class="order-menu__item status-list-item">In progress</li>
+                           <li class="order-menu__item status-list-item">Done</li>
+                           <li class="order-menu__item status-list-item">Delayed</li>
+                        </ul>
+                     </div>
+
+                     <div class="order-menu__checkbox">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__btn">Edit</div>
                   </div>
                </div>
 
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Provider:</div>
-                     <div class="grid-body__numm">Foobar</div>
-                  </div>
-               </div>
-
-               <div class="grid-body__item">
-                  <div class="grid-body__item-block">
-                     <div class="grid-body__title">Status:</div>
-                     <div class="grid-body__numm">In progress</div>
-                  </div>
-               </div>
             </div>
+         </div>
 
-            <div class="grid-body__row-checked">
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
+         <div class="grid-body__content">
+            <a href="#order4" class="grid-body__row popup-link">
+
+               <div class="grid-body__row-items">
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">OrderNo:</div>
+                        <div class="grid-body__numm order-outer">0000001</div>
+                     </div>
                   </div>
-                  <div class="grid-body__check-title">Customer</div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Service:</div>
+                        <div class="grid-body__numm service-outer">Maintenance</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Provider:</div>
+                        <div class="grid-body__numm provider-outer">Foo</div>
+                     </div>
+                  </div>
+
+                  <div class="grid-body__item">
+                     <div class="grid-body__item-block">
+                        <div class="grid-body__title">Status:</div>
+                        <div class="grid-body__numm status-outer">Done</div>
+                     </div>
+                  </div>
                </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
+               <div class="grid-body__row-checked">
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Customer</div>
                   </div>
-                  <div class="grid-body__check-title">Provider</div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Provider</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Arrived</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Job</div>
+                  </div>
+
+                  <div class="grid-body__check">
+                     <div class="checkbox">
+                        <img src="img/checkbox.png" alt="checkbox">
+                     </div>
+                     <div class="grid-body__check-title">Payment</div>
+                  </div>
+               </div>
+            </a>
+
+            <div class="popup-wrapper" id="order4">
+
+               <div class="popup popup-container">
+
+                  <!-- close popup -->
+                  <div class="popup__close">
+                     <a href="#header" class="popup__close-link close-popup"></a>
+                  </div>
+
+                  <!-- popup content -->
+
+                  <div class="popup__body order-menu">
+                     <div class="order-menu__header">
+                        <div class="order-menu__logo">Workflow</div>
+
+                        <div class="order-menu__order-about">
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">OrderNo:</div>
+                                 <input type="text" class="order-menu__about-item-text order" value="000000X">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Service:</div>
+                                 <input type="text" class="order-menu__about-item-text service" value="Maintanence">
+                              </div>
+                           </div>
+                           <div class="order-menu__about-item">
+                              <div class="order-menu__about-item-body">
+                                 <div class="order-menu__about-item-title">Provider:</div>
+                                 <input type="text" class="order-menu__about-item-text provider" value="Foo">
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__status status-dropdown">
+                        <div class="order-menu__status-header">
+                           <div class="order-menu__status-item">Status:</div>
+                           <div class="order-menu__status-position status-btn">In progress</div>
+                        </div>
+                        <ul class="order-menu__list status-list">
+                           <li class="order-menu__item status-list-item">In progress</li>
+                           <li class="order-menu__item status-list-item">Done</li>
+                           <li class="order-menu__item status-list-item">Delayed</li>
+                        </ul>
+                     </div>
+
+                     <div class="order-menu__checkbox">
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                        <div class="order-menu__checkbox-item">
+                           <div class="order-menu__checkbox-img">
+                              <img src="img/checkbox.png" alt="check">
+                           </div>
+                           <div class="order-menu__checkbox-title">Send</div>
+                           <div class="order-menu__checkbox-text">Request</div>
+                        </div>
+
+                     </div>
+
+                     <div class="order-menu__btn">Edit</div>
+                  </div>
                </div>
 
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Arrived</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Job</div>
-               </div>
-
-               <div class="grid-body__check">
-                  <div class="checkbox">
-                     <img src="img/checkbox.png" alt="checkbox">
-                  </div>
-                  <div class="grid-body__check-title">Payment</div>
-               </div>
             </div>
-         </a>
+         </div>
 
       </div>
-
    </div>
 </section>
-
-<div class="popup-wrapper" id="order1">
-   <div class="popup popup-container">
-
-      <!-- close popup -->
-      <div class="popup__close">
-         <a href="#header" class="popup__close-link close-popup"></a>
-      </div>
-
-      <!-- popup content -->
-      <div class="popup__body order-menu">
-         <div class="order-menu__header">
-            <div class="order-menu__logo">Workflow</div>
-
-            <div class="order-menu__order-about">
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">OrderNo:</div>
-                     <div class="order-menu__about-item-text">0000001</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Servise:</div>
-                     <div class="order-menu__about-item-text">Maintanence</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Provider:</div>
-                     <div class="order-menu__about-item-text">Foo</div>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__status">
-            <div class="order-menu__status-item">Status:</div>
-            <div class="order-menu__status-position">In progress</div>
-         </div>
-
-         <div class="order-menu__checkbox">
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Receiving</div>
-               <div class="order-menu__checkbox-text">Service provider</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Arrive</div>
-               <div class="order-menu__checkbox-text">To customer</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__btn">Edit</div>
-      </div>
-   </div>
-</div>
-
-<div class="popup-wrapper" id="order2">
-   <div class="popup popup-container">
-
-      <!-- close popup -->
-      <div class="popup__close">
-         <a href="#header" class="popup__close-link close-popup"></a>
-      </div>
-
-      <!-- popup content -->
-
-      <div class="popup__body order-menu">
-         <div class="order-menu__header">
-            <div class="order-menu__logo">Workflow</div>
-
-            <div class="order-menu__order-about">
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">OrderNo:</div>
-                     <div class="order-menu__about-item-text">0000002</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Servise:</div>
-                     <div class="order-menu__about-item-text">Maintanence</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Provider:</div>
-                     <div class="order-menu__about-item-text">Foo</div>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__status">
-            <div class="order-menu__status-item">Status:</div>
-            <div class="order-menu__status-position">In progress</div>
-         </div>
-
-         <div class="order-menu__checkbox">
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__btn">Edit</div>
-      </div>
-   </div>
-
-</div>
-
-<div class="popup-wrapper" id="order3">
-   <div class="popup popup-container">
-      <!-- close popup -->
-      <div class="popup__close">
-         <a href="#header" class="popup__close-link close-popup"></a>
-      </div>
-
-      <!-- popup content -->
-
-      <div class="popup__body order-menu">
-         <div class="order-menu__header">
-            <div class="order-menu__logo">Workflow</div>
-
-            <div class="order-menu__order-about">
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">OrderNo:</div>
-                     <div class="order-menu__about-item-text">0000003</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Servise:</div>
-                     <div class="order-menu__about-item-text">Maintanence</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Provider:</div>
-                     <div class="order-menu__about-item-text">Foo</div>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__status">
-            <div class="order-menu__status-item">Status:</div>
-            <div class="order-menu__status-position">In progress</div>
-         </div>
-
-         <div class="order-menu__checkbox">
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__btn">Edit</div>
-      </div>
-   </div>
-
-</div>
-
-<div class="popup-wrapper" id="order4">
-
-   <div class="popup popup-container">
-
-      <!-- close popup -->
-      <div class="popup__close">
-         <a href="#header" class="popup__close-link close-popup"></a>
-      </div>
-
-      <!-- popup content -->
-
-      <div class="popup__body order-menu">
-         <div class="order-menu__header">
-            <div class="order-menu__logo">Workflow</div>
-
-            <div class="order-menu__order-about">
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">OrderNo:</div>
-                     <div class="order-menu__about-item-text">0000004</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Servise:</div>
-                     <div class="order-menu__about-item-text">Maintanence</div>
-                  </div>
-               </div>
-               <div class="order-menu__about-item">
-                  <div class="order-menu__about-item-body">
-                     <div class="order-menu__about-item-title">Provider:</div>
-                     <div class="order-menu__about-item-text">Foo</div>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__status">
-            <div class="order-menu__status-item">Status:</div>
-            <div class="order-menu__status-position">In progress</div>
-         </div>
-
-         <div class="order-menu__checkbox">
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-            <div class="order-menu__checkbox-item">
-               <div class="order-menu__checkbox-img">
-                  <img src="img/checkbox.png" alt="check">
-               </div>
-               <div class="order-menu__checkbox-title">Send</div>
-               <div class="order-menu__checkbox-text">Request</div>
-            </div>
-
-         </div>
-
-         <div class="order-menu__btn">Edit</div>
-      </div>
-   </div>
-
-</div>
       </main>
 
       <!-- footer -->

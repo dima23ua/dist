@@ -359,15 +359,59 @@ select {
   padding: 10px;
   cursor: pointer;
 }
-.order-menu__status {
+.order-menu__status-header {
   display: flex;
   align-items: center;
   background-color: #fff;
   padding: 15px;
   margin-top: 4px;
 }
+.order-menu__status {
+  display: flex;
+  flex-direction: column;
+}
 .order-menu__status-item {
   margin-right: 10px;
+}
+.order-menu__list {
+  margin-top: 8px;
+  max-height: 0px;
+  transition: all 0.2s ease 0s;
+  overflow: hidden;
+  background-color: #fff;
+  padding-left: 75px;
+}
+.order-menu__list.visible {
+  max-height: 100px;
+}
+.order-menu__item {
+  display: flex;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.order-menu__item:hover {
+  color: green;
+}
+.order-menu__status-position {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease 0s;
+}
+.order-menu__status-position:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrow.png") no-repeat center top/cover;
+}
+.order-menu__status-position.active:after {
+  transform: rotate(180deg);
+}
+.order-menu__status-position.selected {
+  color: green;
 }
 .order-menu__checkbox {
   display: flex;
